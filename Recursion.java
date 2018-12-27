@@ -1,10 +1,12 @@
 public class Recursion{
    //part1: factorial non-recursion
    public static int factorial(int n){
-      for(int i = 0;i<n;i++){
-           return n*n-i
+      int temp = 0;
+      for(int i = n; i>0;i--){
+           temp *= i;
       }
-   
+      return temp;
+   }
    
    //part2: factorial recursion
     public static int factorial(int n) {
@@ -17,9 +19,12 @@ public class Recursion{
    
    
    //part3: fibonacci sequence non-recursion
-      public static int feedrabbit(int n){
-      for(int i = 1;i<n;i++){
-           return 
+      public static int feedrabbit(int n){//F(1)=1，F(2)=1, F(n)=F(n-1)+F(n-2)
+        int temp = 0;
+      for(int i = 3;i<n;i++){
+       temp+=2+(i-1)+(i-2);   
+      }
+         return temp;
       }
    
    
