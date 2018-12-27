@@ -1,7 +1,7 @@
 public class Recursion{
    //part1: factorial non-recursion
    public static int factorial(int n){
-      int temp = 0;
+      int temp = 1;
       for(int i = n; i>0;i--){
            temp *= i;
       }
